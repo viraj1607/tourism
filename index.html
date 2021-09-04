@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tourism Website</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a class="btn" href="#footer">Contact</a></li>
+        </ul>
+        <img src="./images/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore the Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- EVENTS -->
+    <section class="events" id="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/img1.png" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum, dolor ipsa assumenda quasi optio.</p>
+                <a class="btn" href="#">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./images/img2.png" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum, dolor ipsa assumenda quasi optio.</p>
+                <a class="btn" href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam sint corrupti possimus repellendus? Quis itaque officia ea nam iusto unde quasi, possimus nemo eligendi placeat nostrum, iste temporibus assumenda expedita numquam deleniti pariatur neque ipsam amet modi tenetur quaerat? Iure.</P>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- UPCOMING TOURS -->
+    <section class="tours" id="tours">
+        <div class="row">
+            <div class="col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus autem ex inventore aliquid voluptatem similique doloremque voluptate, culpa esse nobis natus, sapiente ullam temporibus fugiat repellendus odit consequatur voluptatibus voluptates dolore? Distinctio a voluptatem culpa optio sapiente ad natus rem.</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <div class="col">
+                <div class="img-gallery">
+                    <img src="./images/img3.png" alt="">
+                    <img src="./images/img4.png" alt="">
+                    <img src="./images/img5.png" alt="">
+                    <img src="./images/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer" id="footer">
+        <p>123 Avenue, Torronto, Canada | Phone: 400-543-987 | Email: xyz@adventure.com</p>
+        <p>Copyright @ 2021 Adventure </p>
+        <div class="line"></div>
+        <p>Made with <i class="fas fa-heart" style="color: black;"></i> by tecHumming</p>
+    </section>
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navLinks=document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
