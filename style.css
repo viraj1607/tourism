@@ -314,4 +314,8 @@ img:hover{
     .tours p{
         padding: 10px;
     }
+
+    .tours .btn{
+        margin: 0;
+    }
 }
